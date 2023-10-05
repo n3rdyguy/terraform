@@ -1,13 +1,13 @@
 variable "region" {
-  type = string
+  type    = string
   default = "eu-central-1"
 }
 
 variable "name" {
-    type = string
+  type = string
 }
 
-variable "acl" {  
-  type = string
+variable "acl" {
+  type    = string
   default = "private"
 }

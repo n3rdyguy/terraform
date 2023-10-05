@@ -3,11 +3,11 @@ provider "aws" {
 }
 
 resource "aws_s3_bucket" "myS3Bucket" {
-  bucket = var.name
+  bucket        = var.name
   force_destroy = true
 }
 
 resource "aws_s3_bucket_acl" "myS3Bucket" {
   bucket = aws_s3_bucket.myS3Bucket.bucket
-  acl = var.acl  
+  acl    = var.acl
 }
